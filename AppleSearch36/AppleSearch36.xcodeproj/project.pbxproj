@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		2A000AB1251CFDC300F0F41D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A000AB0251CFDC300F0F41D /* AppDelegate.swift */; };
 		2A000AB3251CFDC300F0F41D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A000AB2251CFDC300F0F41D /* SceneDelegate.swift */; };
-		2A000AB5251CFDC300F0F41D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A000AB4251CFDC300F0F41D /* ViewController.swift */; };
 		2A000AB8251CFDC300F0F41D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A000AB6251CFDC300F0F41D /* Main.storyboard */; };
 		2A000ABA251CFDC500F0F41D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A000AB9251CFDC500F0F41D /* Assets.xcassets */; };
 		2A000ABD251CFDC500F0F41D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A000ABB251CFDC500F0F41D /* LaunchScreen.storyboard */; };
+		2A000AD0251D03A000F0F41D /* MusicItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A000ACF251D03A000F0F41D /* MusicItem.swift */; };
+		2A000AD3251D084600F0F41D /* AppItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A000AD2251D084600F0F41D /* AppItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2A000AAD251CFDC300F0F41D /* AppleSearch36.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleSearch36.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A000AB0251CFDC300F0F41D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A000AB2251CFDC300F0F41D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2A000AB4251CFDC300F0F41D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2A000AB7251CFDC300F0F41D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2A000AB9251CFDC500F0F41D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A000ABC251CFDC500F0F41D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A000ABE251CFDC500F0F41D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A000ACF251D03A000F0F41D /* MusicItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicItem.swift; sourceTree = "<group>"; };
+		2A000AD2251D084600F0F41D /* AppItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,80 @@
 		2A000AAF251CFDC300F0F41D /* AppleSearch36 */ = {
 			isa = PBXGroup;
 			children = (
+				2A000AC9251D033D00F0F41D /* Models */,
+				2A000AC8251D033900F0F41D /* Views */,
+				2A000AC7251D033500F0F41D /* Controllers */,
+				2A000AC5251D031F00F0F41D /* Resources */,
+			);
+			path = AppleSearch36;
+			sourceTree = "<group>";
+		};
+		2A000AC5251D031F00F0F41D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				2A000AB0251CFDC300F0F41D /* AppDelegate.swift */,
 				2A000AB2251CFDC300F0F41D /* SceneDelegate.swift */,
-				2A000AB4251CFDC300F0F41D /* ViewController.swift */,
-				2A000AB6251CFDC300F0F41D /* Main.storyboard */,
 				2A000AB9251CFDC500F0F41D /* Assets.xcassets */,
 				2A000ABB251CFDC500F0F41D /* LaunchScreen.storyboard */,
 				2A000ABE251CFDC500F0F41D /* Info.plist */,
 			);
-			path = AppleSearch36;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2A000AC7251D033500F0F41D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2A000ACD251D036700F0F41D /* ModelControllers */,
+				2A000ACC251D036200F0F41D /* ViewControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2A000AC8251D033900F0F41D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2A000ACB251D035000F0F41D /* Storyboards */,
+				2A000ACA251D034700F0F41D /* CustomViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2A000AC9251D033D00F0F41D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2A000ACF251D03A000F0F41D /* MusicItem.swift */,
+				2A000AD2251D084600F0F41D /* AppItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2A000ACA251D034700F0F41D /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		2A000ACB251D035000F0F41D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2A000AB6251CFDC300F0F41D /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2A000ACC251D036200F0F41D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2A000ACD251D036700F0F41D /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModelControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +204,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A000AB5251CFDC300F0F41D /* ViewController.swift in Sources */,
+				2A000AD3251D084600F0F41D /* AppItem.swift in Sources */,
+				2A000AD0251D03A000F0F41D /* MusicItem.swift in Sources */,
 				2A000AB1251CFDC300F0F41D /* AppDelegate.swift in Sources */,
 				2A000AB3251CFDC300F0F41D /* SceneDelegate.swift in Sources */,
 			);
@@ -288,7 +356,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G359J97949;
-				INFOPLIST_FILE = AppleSearch36/Info.plist;
+				INFOPLIST_FILE = AppleSearch36/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +375,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G359J97949;
-				INFOPLIST_FILE = AppleSearch36/Info.plist;
+				INFOPLIST_FILE = AppleSearch36/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
